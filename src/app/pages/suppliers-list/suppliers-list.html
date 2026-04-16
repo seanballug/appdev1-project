@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Contact</th>
+    <th>Action</th>
+  </tr>
+
+  <tr *ngFor="let supplier of suppliers">
+    <td>{{ supplier.id }}</td>
+    <td>{{ supplier.name }}</td>
+    <td>{{ supplier.contact }}</td>
+    <td>
+      <button (click)="viewSupplierDetails(supplier.id)">View</button>
+    </td>
+  </tr>
+</table>
